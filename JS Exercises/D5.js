@@ -97,8 +97,8 @@ console.log(justTrims);
 let findLetter = "b";
 
 for (i = 0; i < cars.length; i++) {
-  let index = cars[i].color.indexOf(findLetter);
-  if (index !== -1) {
+  let x = cars[i].color.indexOf(findLetter);
+  if (x === 0) {
     console.log("Fizz");
   } else {
     console.log("Buzz");
