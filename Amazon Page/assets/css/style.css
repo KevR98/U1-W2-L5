@@ -29,11 +29,17 @@ main section {
   color: white;
 }
 
+/* GESTIONE DEI BOTTONI */
+
 button {
   color: #0d6e78;
   border: none;
   background-color: #e9edee;
   cursor: pointer;
+}
+
+button:hover {
+  color: red;
 }
 
 /* HEADER */
