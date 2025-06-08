@@ -14,7 +14,7 @@ REGOLE
 const pets = ["dog", "cat", "hamster", "redfish"];
 
 for (let i = 0; i < pets.length; i++) {
-  //console.log(pets[i]);
+  console.log(i, pets[i]);
 }
 
 /* ESERCIZIO 2
@@ -60,22 +60,20 @@ const cars = [
   },
 ];
 
-/* for (let i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   cars[i].licensePlate = "n/a";
 }
 console.log(cars);
-*/
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
-/* for (let i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   cars[i].trims.pop();
 }
 console.log(cars);
-*/
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -96,6 +94,17 @@ console.log(justTrims);
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
+let findLetter = "b";
+
+for (i = 0; i < cars.length; i++) {
+  let index = cars[i].color.indexOf(findLetter);
+  if (index !== -1) {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
+  }
+}
+
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
@@ -109,3 +118,4 @@ const numericArray = [
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const pos = [];
